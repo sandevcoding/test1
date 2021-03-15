@@ -1409,10 +1409,22 @@
 	}
 
 	body {
-		background-color: #000;
-		background-image: url("../../images/bg.jpg");
-		background-size: cover;
-		background-position: top center;
+		background: linear-gradient(-45deg, #31b7e7, #f15e09, #31b7e7, #38e755);
+	  background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+	}
+
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+	  }
+	
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1427,6 +1439,10 @@
 		}
 
 /* Type */
+
+    .undertittel{
+		margin-top: -1em;
+	}
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.65);
